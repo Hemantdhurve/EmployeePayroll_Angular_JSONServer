@@ -1,0 +1,62 @@
+<div class="header">
+    <div class="subHeader">
+        <div class="logo">
+            <img src="/assets/addemplogo.png">
+        </div>
+        <div class="txtEmp">
+            <span class="empgreen">EMPLOYEE</span>
+            <span class="paygrey">PAYROLL</span>
+        </div>
+    </div>
+</div>
+<div class="mainContainer">
+    <div class="addcontainer">
+        <div class="detailsSearch">
+            Employee Details
+        </div>
+        <div class="searchbar" *ngIf="searchbarhide">
+           <input class="inpfield" placeholder="Search...">
+        </div>
+        <div class="searchAdd">           
+            <div class="icon" (click)="showsearch()">
+                <img src="/assets/searchicon.svg" class="iconserch">
+            </div>
+            <div class="buttonAdd">
+                <button mat-button class="colorbtn" (click)="navEmpForm()">
+                    <span class="plus"> + </span>
+                    <span> Add User</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="tablecontainer">
+        <table style="text-align: center;">
+            <tr>
+                <th class="nametxt">Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Start date</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td class="namePofile"><img src="/assets/meee.png" class="profileimg"> Hemant</td>
+                <td>Male</td>
+                <td>
+                    <span class="multidept"> Engineer </span>
+                </td>
+                <td class="salarylogo">
+                    <img src="/assets/rupee.png" class="rupee">
+                    50000
+                </td>
+                <td>01-01-2020</td>
+                <td>
+                    <div class="twoIcons">
+                        <img src="/assets/trash.png" class="point">
+                        <img src="/assets/edit.png" class="point">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

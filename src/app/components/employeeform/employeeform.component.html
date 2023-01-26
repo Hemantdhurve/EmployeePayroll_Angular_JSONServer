@@ -1,0 +1,158 @@
+<div class="header">
+    <div class="subHeader">           
+        <div class="logo" (click)="navEmpData()">
+            <img src="/assets/addemplogo.png">
+        </div>
+        <div class="txtEmp" (click)="navEmpData()">
+            <span class="empgreen">EMPLOYEE</span>
+            <span class="paygrey">PAYROLL</span>
+        </div>
+    </div>   
+</div>
+<div class="colorAll">
+    <div class="container">
+        <form class="formBox">
+            <div class="formDataBox">
+                <div class="formTxt">Employee Payroll Form</div>
+                <div class="name">
+                    <label class="txtname">Name:</label>
+                    <div class="txtbox">
+                        <mat-form-field appearance="outline" class="txtfield" >
+                            <input matInput placeholder="" />
+                        </mat-form-field>
+                    </div> 
+                </div>
+                <div class="name">
+                    <label class="txtname">Profile Image :</label>
+                    <div class="radiocontent">
+                        <label class="radioprof">
+                            <input type="radio" id="Profile1" name="Profile" value="image1.jpg">
+                            <img class="profile" id="image1"  src="/assets/meee.png">
+                        </label>
+                        <label class="radioprof">
+                            <input type="radio" id="Profile2" name="Profile" value="image2.jpg">
+                            <img class="profile" id="image2"  src="/assets/women1.png">
+                        </label>
+                        <label class="radioprof">
+                            <input type="radio" id="Profile3" name="Profile" value="image3.jpg">
+                            <img class="profile" id="image3"  src="/assets/man1.png">
+                        </label>
+                        <label class="radioprof">
+                            <input type="radio" id="Profile4" name="Profile" value="image4.jpg">
+                            <img class="profile" id="image4"  src="/assets/women2.png">
+                        </label>
+                       
+                    </div>
+                </div>
+                <div class="name">
+                    <label class="txtname">Gender :</label>
+                    <div class="radiocontent">
+                        <label class="radioprof">                        
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label>Male</label>
+                        </label>
+                        <label class="radioprof"> 
+                            <input type="radio" id="female" name="gender" value="FeMale">
+                            <label>Female</label>
+                        </label>
+                    </div>   
+                </div> 
+                <div class="name">
+                    <label class="txtname">Department:</label>                
+                    <div class="chkbox">
+                        <mat-checkbox ><span class="deptTxt">HR</span></mat-checkbox>
+                        <mat-checkbox ><span class="deptTxt">Sales</span></mat-checkbox>
+                        <mat-checkbox ><span class="deptTxt">Finance</span></mat-checkbox>
+                        <mat-checkbox ><span class="deptTxt">Engineer</span></mat-checkbox>
+                        <mat-checkbox ><span class="deptTxt">Others</span></mat-checkbox>
+                    </div>
+                </div>
+                <div class="name">
+                    <label class="txtname">Salary :</label>
+                    <select class="selectoption">
+                        <option>Select Salary </option>
+                        <option value="10000">10000</option>
+                        <option value="20000">20000</option>
+                        <option value="30000">30000</option>
+                    </select>
+            </div> 
+            <div class="name" >
+                    <label class="txtname">Start Date :</label>
+                <select class="date">                   
+                    <option >Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>                   
+                </select>
+                <select class="date" >                     
+                        <option >Month</option>
+                        <option value="Jan">January</option>
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">August</option>
+                        <option value="Sept">September</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>                   
+                </select>
+                    <select class="date">                     
+                        <option >Year</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>                   
+                        <option value="2022">2023</option>                   
+                    </select>            
+                </div> 
+                <div class="txtareabox">
+                    <label class="txtname">Notes:</label>
+                    <textarea type="text" placeholder="Type your message here..."></textarea>
+                </div> 
+                <div class="rowbutton">
+                    <div>
+                        <button mat-flat-button class="btn">Cancle</button>
+                    </div>
+                    <div>
+                        <button mat-flat-button class="btn">Submit</button>
+                        <button mat-flat-button class="btn1">Reset</button>
+                    </div>
+                </div> 
+            </div>
+
+        </form>
+    </div>
+</div>
