@@ -11,13 +11,24 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+import {FormsModule} from '@angular/forms';
+import { SearchpipePipe } from './components/searchpipe/searchpipe.pipe';
+import { DialogemployeeboxComponent } from './components/dialogemployeebox/dialogemployeebox.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeformComponent,
-    EmployeedataComponent
+    EmployeedataComponent,
+    SearchpipePipe,
+    DialogemployeeboxComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +38,14 @@ import {MatRadioModule} from '@angular/material/radio';
     MatInputModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

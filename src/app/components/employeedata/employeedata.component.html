@@ -15,7 +15,7 @@
             Employee Details
         </div>
         <div class="searchbar" *ngIf="searchbarhide">
-           <input class="inpfield" placeholder="Search...">
+           <input class="inpfield" placeholder="Search..."  (keyup)="searchName($event)">
         </div>
         <div class="searchAdd">           
             <div class="icon" (click)="showsearch()">
@@ -39,20 +39,20 @@
                 <th>Start date</th>
                 <th>Actions</th>
             </tr>
-            <tr>
-                <td class="namePofile"><img src="/assets/meee.png" class="profileimg"> Hemant</td>
-                <td>Male</td>
+            <tr *ngFor="let emp of empArray | searchpipe:searchname">
+                <td class="namePofile"><img [src]="emp.profileImage" class="profileimg"> {{emp.name}}</td>
+                <td>{{emp.gender}}</td>
                 <td>
-                    <span class="multidept"> Engineer </span>
+                    <span class="multidept" *ngFor="let dept of emp.department"> {{emp.deparment}} </span>
                 </td>
                 <td class="salarylogo">
                     <img src="/assets/rupee.png" class="rupee">
-                    50000
+                    {{emp.salary}}
                 </td>
-                <td>01-01-2020</td>
+                <td>{{emp.date | date:'dd-MMM-yyyy'}}</td>
                 <td>
                     <div class="twoIcons">
-                        <img src="/assets/trash.png" class="point">
+                        <img src="/assets/trash.png" class="point" (click)="deleteEmployee(emp?.id)">
                         <img src="/assets/edit.png" class="point">
                     </div>
                 </td>

@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "name": "Hemant Dhurve",
+      "profileImage": "/assets/meee.png",
+      "department": "",
+      "gender": "Male",
+      "salary": "30000",
+      "date": "2023-01-12T18:30:00.000Z",
+      "inputnotes": "my name is hemant",
+      "id": 17
+    },
+    {
+      "name": "kiran",
+      "profileImage": "/assets/women1.png",
+      "department": "",
+      "gender": "FeMale",
+      "salary": "30000",
+      "date": "2023-01-18T18:30:00.000Z",
+      "inputnotes": "22222",
+      "id": 18
+    },
+    {
+      "name": "Jimmy Jimmy",
+      "profileImage": "/assets/man1.png",
+      "department": "",
+      "gender": "Male",
+      "salary": "20000",
+      "date": "2023-01-05T18:30:00.000Z",
+      "inputnotes": "asasasa",
+      "id": 19
+    }
+  ],
+  "getAll": [
+    {}
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
