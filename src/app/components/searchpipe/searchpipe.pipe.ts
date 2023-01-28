@@ -15,7 +15,7 @@ export class SearchpipePipe implements PipeTransform {
     }
 
     return value.filter((filterObj: any) => {
-      return filterObj.name.toLowerCase().includes(searchText) | filterObj.department.toLowerCase().includes(searchText)
+      return filterObj.name.toLowerCase().includes(searchText) | filterObj.salary.toLowerCase().includes(searchText)
     })
   }
 }

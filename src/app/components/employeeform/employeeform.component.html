@@ -62,10 +62,10 @@
                 </div>
                 <div class="name">
                     <label class="txtname" for="department">Department:</label>
-                    <div class="chkbox" *ngFor="let dept of deptArray">
-                        <input type="checkbox" formArrayName="department" class="checkbox" [name]="dept.deptname"
-                            (change)="onChange($event)" [checked]="dept.checked" [value]="dept.id">
-                        <label class="text">{{dept.deptname}}</label>
+                    <div class="chkbox" *ngFor="let dept of deptArray,let i=index">
+                        <input type="checkbox" formArrayName="department" [name]="dept.deptname"
+                            (change)="onChange($event)" [checked]="dept.checked" [value]="dept.deptname">
+                        <label>{{dept.deptname}}</label>
                     </div>
                 </div>
                 <div class="name">
@@ -75,6 +75,10 @@
                             <mat-option value="10000">10000</mat-option>
                             <mat-option value="20000">20000</mat-option>
                             <mat-option value="30000">30000</mat-option>
+                            <mat-option value="40000">40000</mat-option>
+                            <mat-option value="50000">50000</mat-option>
+                            <mat-option value="60000">60000</mat-option>
+                            <mat-option value="70000">70000</mat-option>
                         </mat-select>
                     </mat-form-field>
                 </div>

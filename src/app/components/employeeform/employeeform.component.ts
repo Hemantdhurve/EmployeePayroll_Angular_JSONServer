@@ -26,12 +26,10 @@ export class EmployeeformComponent implements OnInit{
     this.employeeform = this.formBuilder.group({
       name: ['', [Validators.required]],
       profileImage: ['', [Validators.required]],
-      department: ['', [Validators.required]],
+      department: this.formBuilder.array([]),
       gender: ['', [Validators.required]],
       salary: ['', [Validators.required]],
       date: ['', [Validators.required]],
-      // month: ['', [Validators.required]],
-      // year: ['', [Validators.required]],
       inputnotes: ['', [Validators.required]],
 
     })
@@ -76,6 +74,14 @@ export class EmployeeformComponent implements OnInit{
    const deptname=$event.target.name;
    console.log(id,isChecked,deptname)
 
+   const department: FormArray = this.employeeform.get('department') as FormArray;
+
+    if (isChecked) {
+      department.push(new FormControl(id));
+    } else {
+      const index = department.controls.findIndex(x => x.value === id);
+      department.removeAt(index);
+    }
   //  const empArray=this.employeeform.get(this.deptArray) as FormArray
   //  if(this.deptArray.indexOf()){
   //   push(new FormControl(isChecked))
@@ -94,8 +100,6 @@ export class EmployeeformComponent implements OnInit{
       gender: this.employeeform.value.gender,
       salary: this.employeeform.value.salary,
       date: this.employeeform.value.date,
-      // month: this.employeeform.value.month,
-      // year: this.employeeform.value.year,
       inputnotes: this.employeeform.value.inputnotes,
     }
     this.empservice.addEmployee(payload).subscribe((response:any)=>{

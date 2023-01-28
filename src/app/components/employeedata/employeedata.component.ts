@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DataserviceService } from 'src/app/services/dataservice/dataservice.service';
 import { EmployeeserviceService } from 'src/app/services/employeeservice.service';
+import { DialogemployeeboxComponent } from '../dialogemployeebox/dialogemployeebox.component';
 
 @Component({
   selector: 'app-employeedata',
@@ -15,8 +17,10 @@ export class EmployeedataComponent implements OnInit {
   subscription:any;
   message:any;
   searchname:any;
+  deptArray:any=[];
+  department:any=[];
 
-  constructor(private router:Router,private empservice:EmployeeserviceService,private dataservice:DataserviceService){}
+  constructor(private router:Router,private empservice:EmployeeserviceService,private dataservice:DataserviceService,public dialog: MatDialog){}
 
   ngOnInit(): void {
     this.getAllEmployee();
@@ -39,7 +43,12 @@ export class EmployeedataComponent implements OnInit {
   getAllEmployee(){
     return this.empservice.getEmployee().subscribe((response:any)=>{
       this.empArray=response
-      console.log("Retrived all Employees",response)
+      console.log("Retrived all Employees",this.empArray)
+      // this.deptArray = this.empArray.filter((response: any) => {
+      //   this.department = response.department
+      //   console.log('Finally getting department Array',this.department)
+
+      // })
     })
   }
    
@@ -55,6 +64,18 @@ export class EmployeedataComponent implements OnInit {
       dataResult: [event.target.value]
     }
     return this.dataservice.changeMessage(searchResult)
+  }
+
+  //dialog open
+
+  openDialog(empObj:any) {
+    const dialogRef = this.dialog.open(DialogemployeeboxComponent,{
+      data:empObj
+    })
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 

@@ -22,4 +22,8 @@ export class EmployeeserviceService {
   deleteEmployee(id:any){
     return this.http.DeleteService(id)
   }
+
+  updateEmployee(id:any,data:any){
+    return this.http.UpdateService(id,data)
+  }
 }

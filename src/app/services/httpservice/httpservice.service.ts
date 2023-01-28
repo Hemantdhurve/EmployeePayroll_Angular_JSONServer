@@ -31,4 +31,11 @@ export class HttpserviceService {
       return response;
     }))
   }
+
+  UpdateService(id:any,data:any){
+    return this.httpclient.put<any>(this.baseurl+'posts/'+id,data)
+    .pipe(map((response:any)=>{
+      return response;
+    }))
+  }
 }

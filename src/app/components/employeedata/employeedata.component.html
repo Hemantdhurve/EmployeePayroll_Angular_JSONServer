@@ -42,8 +42,8 @@
             <tr *ngFor="let emp of empArray | searchpipe:searchname">
                 <td class="namePofile"><img [src]="emp.profileImage" class="profileimg"> {{emp.name}}</td>
                 <td>{{emp.gender}}</td>
-                <td>
-                    <span class="multidept" *ngFor="let dept of emp.department"> {{emp.deparment}} </span>
+                <td >
+                    <span class="multidept" *ngFor="let dept of emp.department"> {{dept}} </span>
                 </td>
                 <td class="salarylogo">
                     <img src="/assets/rupee.png" class="rupee">
@@ -53,7 +53,7 @@
                 <td>
                     <div class="twoIcons">
                         <img src="/assets/trash.png" class="point" (click)="deleteEmployee(emp?.id)">
-                        <img src="/assets/edit.png" class="point">
+                        <img src="/assets/edit.png" class="point" (click)="openDialog(emp)">
                     </div>
                 </td>
             </tr>

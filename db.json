@@ -3,7 +3,9 @@
     {
       "name": "Hemant Dhurve",
       "profileImage": "/assets/meee.png",
-      "department": "",
+      "department": [
+        "Engineer"
+      ],
       "gender": "Male",
       "salary": "30000",
       "date": "2023-01-12T18:30:00.000Z",
@@ -11,24 +13,150 @@
       "id": 17
     },
     {
-      "name": "kiran",
+      "name": "kiran kaushik",
       "profileImage": "/assets/women1.png",
-      "department": "",
+      "department": [
+        "HR",
+        "Finance",
+        "Engineer"
+      ],
       "gender": "FeMale",
       "salary": "30000",
-      "date": "2023-01-18T18:30:00.000Z",
+      "date": "2023-01-17T18:30:00.000Z",
       "inputnotes": "22222",
       "id": 18
     },
     {
       "name": "Jimmy Jimmy",
       "profileImage": "/assets/man1.png",
-      "department": "",
+      "department": [
+        "Engineer"
+      ],
       "gender": "Male",
       "salary": "20000",
       "date": "2023-01-05T18:30:00.000Z",
       "inputnotes": "asasasa",
       "id": 19
+    },
+    {
+      "name": "Ravi Teja",
+      "profileImage": "/assets/man1.png",
+      "department": [
+        "Other"
+      ],
+      "gender": "Male",
+      "salary": "20000",
+      "date": "2023-01-18T18:30:00.000Z",
+      "inputnotes": "South Superstar",
+      "id": 20
+    },
+    {
+      "name": "Nishi Duke",
+      "profileImage": "/assets/women2.png",
+      "department": [
+        "HR",
+        "Finance",
+        "Other"
+      ],
+      "gender": "FeMale",
+      "salary": "30000",
+      "date": "2023-01-15T18:30:00.000Z",
+      "inputnotes": "my name is Nishi",
+      "id": 21
+    },
+    {
+      "name": "Mr India",
+      "profileImage": "/assets/man1.png",
+      "department": [
+        "HR",
+        "Finance",
+        "Other"
+      ],
+      "gender": "Male",
+      "salary": "50000",
+      "date": "2023-01-12T18:30:00.000Z",
+      "inputnotes": "My Oylompia",
+      "id": 22
+    },
+    {
+      "name": "Tom Holland",
+      "profileImage": "/assets/meee.png",
+      "department": [
+        "Finance",
+        "Engineer"
+      ],
+      "gender": "Male",
+      "salary": "60000",
+      "date": "2021-07-06T18:30:00.000Z",
+      "inputnotes": "Hollywood",
+      "id": 23
+    },
+    {
+      "name": "Mike",
+      "profileImage": "/assets/man1.png",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance"
+      ],
+      "gender": "Male",
+      "salary": "50000",
+      "date": "2023-01-12T18:30:00.000Z",
+      "inputnotes": "sqsq",
+      "id": 24
+    },
+    {
+      "name": "Girish",
+      "profileImage": "/assets/meee.png",
+      "department": [
+        "HR"
+      ],
+      "gender": "Male",
+      "salary": "40000",
+      "date": "2023-01-25T18:30:00.000Z",
+      "inputnotes": "ssss",
+      "id": 25
+    },
+    {
+      "name": "sss",
+      "profileImage": "/assets/women1.png",
+      "department": [
+        "Finance",
+        "Other"
+      ],
+      "gender": "FeMale",
+      "salary": "60000",
+      "date": "2023-01-13T18:30:00.000Z",
+      "inputnotes": "asas",
+      "id": 26
+    },
+    {
+      "name": "asS",
+      "profileImage": "/assets/women2.png",
+      "department": [
+        "HR",
+        "Sales"
+      ],
+      "gender": "FeMale",
+      "salary": "60000",
+      "date": "2023-01-16T18:30:00.000Z",
+      "inputnotes": "ASsSs",
+      "id": 27
+    },
+    {
+      "name": "Hems",
+      "profileImage": "/assets/meee.png",
+      "department": [
+        "HR",
+        "Sales",
+        "Finance",
+        "Engineer"
+      ],
+      "gender": "Male",
+      "salary": "70000",
+      "date": "2023-01-27T18:30:00.000Z",
+      "inputnotes": "Multi Talented Person",
+      "id": 28
     }
   ],
   "getAll": [
