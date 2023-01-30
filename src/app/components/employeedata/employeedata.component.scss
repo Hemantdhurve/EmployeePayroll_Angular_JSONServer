@@ -1,5 +1,4 @@
-
-.header{
+.header {
     display: flex;
     width: 99.3vw;
     height: 12vh;
@@ -7,40 +6,47 @@
     align-items: center;
     background-color: #FFFFFF;
 }
-.subHeader{
+
+.subHeader {
     position: relative;
     display: flex;
     width: 50vw;
     left: 10vw;
     height: 52px;
 }
-.logo{
+
+.logo {
     width: 50px;
     height: 49px;
     background-color: #d6dadd;
     border: 2px solid #42515F;
 }
-.txtEmp{
+
+.txtEmp {
     display: flex;
     flex-direction: column;
     font-size: 24px;
     font-weight: 600;
     margin-left: 5px;
 }
-.empgreen{
+
+.empgreen {
     color: #82A70C;
     margin-bottom: 8px;
 }
-.paygrey{
+
+.paygrey {
     color: #42515F;
 }
+
 //
-.mainContainer{
+.mainContainer {
     background-color: #E2E2E2;
     height: auto;
     width: 100vw;
 }
-.addcontainer{
+
+.addcontainer {
     height: 16vh;
     width: 80vw;
     position: relative;
@@ -49,7 +55,8 @@
     align-items: center;
     justify-content: space-between;
 }
-.detailsSearch{
+
+.detailsSearch {
     display: flex;
     align-items: center;
     font-size: 22px;
@@ -57,7 +64,8 @@
     color: #42515F;
     font-weight: 600;
 }
-.searchbar{
+
+.searchbar {
     width: 30vw;
     display: flex;
     position: relative;
@@ -66,7 +74,8 @@
     height: 50px;
     justify-content: flex-end;
 }
-.inpfield{
+
+.inpfield {
     height: 40px;
     width: 30vw;
     font-size: 18px;
@@ -78,14 +87,16 @@
     border-radius: 15px 0px 0px 15px;
 
 }
-.searchAdd{
+
+.searchAdd {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 17vw;
     height: 50px;
 }
-.icon{
+
+.icon {
     background-color: #FFFFFF;
     // border-radius: 0px 15px 15px 0px;
     border-radius: 15px;
@@ -93,14 +104,16 @@
     align-items: center;
     justify-content: center;
     height: 41px;
-    width:50px;
+    width: 50px;
     cursor: pointer;
     box-shadow: 1px 1px 5px gray;
 }
-.iconserch{
+
+.iconserch {
     height: 30px;
 }
-.buttonAdd{
+
+.buttonAdd {
     color: #E2E2E2 !important;
     display: flex;
     align-items: center;
@@ -108,23 +121,25 @@
     height: 40px;
 
 }
-.colorbtn{
+
+.colorbtn {
     background-color: #82A70C;
     color: #E2E2E2 !important;
     display: flex;
-    align-items: center; 
+    align-items: center;
     width: 150px;
     font-size: 20px;
     height: 40px;
 }
-.plus{   
+
+.plus {
     font-size: 25px;
     width: 20px;
-    height: 20px;    
+    height: 20px;
 }
 
 //
-.tablecontainer{
+.tablecontainer {
     height: auto;
     width: 80vw;
     position: relative;
@@ -133,65 +148,348 @@
     align-items: center;
     flex-direction: column;
 }
-table{
+
+table {
     border-collapse: separate;
     width: 100%;
     border-spacing: 0 3px;
 }
-td{
+
+td {
     align-items: center;
     position: relative;
     padding-left: 10px;
     height: 7vh;
     font-size: 16px;
 }
-th{
+
+th {
     background-color: #42515F;
-    color:white;
+    color: white;
     height: 7vh;
     font-size: 15px;
+    text-align: center;
 }
-tr{
+
+tr {
     background-color: white;
 }
-.nametxt{
+
+.nametxt {
     display: flex;
     position: relative;
     align-items: center;
     padding-left: 65px;
 }
-.namePofile{
+
+.depp {
+    width: 350px;
+}
+
+.namePofile {
     display: flex;
     align-items: center;
-    
+
 }
-.profileimg{
-   width: 32px;
-   padding-left: 10px; 
-   margin-right: 15px;
+
+.clubdept {
+    text-align: start;
+    padding-left: 50px;
+
 }
-.multidept{
+
+.profileimg {
+    width: 32px;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+.multidept {
     background: #badb71;
     padding: 7px;
     border-radius: 15px;
     margin-right: 5px;
 }
-.salarylogo{
+
+.salarylogo {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     bottom: 3px;
 }
-.rupee{
+
+.rupee {
     height: 20px;
 }
-.twoIcons{
+
+.twoIcons {
     height: 25px;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.point{
+
+.point {
     cursor: pointer;
+}
+
+@media (min-width:721px) and (max-width:1280px) {
+    .subHeader {
+        left: 5vw;
+    }
+
+    .addcontainer {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .searchbar {
+        width: 25vw;
+    }
+
+    .inpfield {
+        width: 25vw;
+
+    }
+
+    .searchAdd {
+        width: 20vw;
+        gap: 5px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .buttonAdd {
+        width: 120px;
+
+    }
+
+    .colorbtn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .plus {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .tablecontainer {
+        width: 90vw;
+        left: 5vw;
+    }
+
+    table {
+        text-align: start;
+    }
+
+    td {
+        padding-left: 1px;
+        height: 8vh;
+        font-size: 15px;
+    }
+
+    th {
+        height: 7vh;
+        font-size: 14px;
+    }
+
+    .clubdept {
+        text-align: start;
+        padding-left: 50px;
+
+    }
+
+    .multidept {
+        padding: 1px;
+    }
+
+    .depp {
+        width: 200px;
+    }
+}
+
+@media (min-width:481px) and (max-width:720px) {
+    .subHeader {
+        left: 5vw;
+    }
+
+    .addcontainer {
+        width: 100vw;
+        left: 0vw;
+    }
+
+    .searchbar {
+        width: 25vw;
+    }
+
+    .inpfield {
+        width: 25vw;
+
+    }
+
+    .searchAdd {
+        width: 20vw;
+        gap: 5px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .buttonAdd {
+        width: 120px;
+
+    }
+
+    .colorbtn {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .plus {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .tablecontainer {
+        width: 100vw;
+        left: 0vw;
+    }
+
+    td {
+        padding-left: 1px;
+        height: 8vh;
+        font-size: 15px;
+    }
+
+    th {
+        height: 7vh;
+        font-size: 14px;
+    }
+
+    .nametxt {
+        padding-left: 30px;
+    }
+
+    .clubdept {
+        text-align: start;
+        padding-left: 10px;
+
+    }
+
+    .depp {
+        width: 250px;
+    }
+
+    .multidept {
+        padding: 1px;
+    }
+
+    .twoIcons {
+        height: 20px;
+        gap: 5px;
+    }
+}
+
+@media (min-width:320px) and (max-width:480px) {
+    .header {
+        display: none;
+    }
+
+    .subHeader {
+        left: 5vw;
+    }
+
+    .addcontainer {
+        width: 100vw;
+        left: 0vw;
+    }
+
+    .detailsSearch {
+        font-size: 18px;
+    }
+
+    .searchbar {
+        width: 25vw;
+    }
+
+    .inpfield {
+        width: 25vw;
+    }
+
+    .searchAdd {
+        width: 35vw;
+        gap: 5px;
+    }
+
+    .icon {
+        width: 40px;
+    }
+
+    .buttonAdd {
+        width: 120px;
+        height: 30px;
+
+    }
+
+    .colorbtn {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .plus {
+        font-size: 16px;
+        height: 20px;
+    }
+
+    .tablecontainer {
+        width: 100vw;
+        left: 0vw;
+
+    }
+
+    td {
+        padding-left: 1px;
+        height: 8vh;
+        font-size: 12px;
+    }
+
+    th {
+        height: 7vh;
+        font-size: 10px;
+    }
+
+    .nametxt {
+        padding-left: 20px;
+    }
+
+    .clubdept {
+        text-align: start;
+        padding-left: 10px;
+
+    }
+    .profileimg {
+        width: 20px;
+        padding-left: 1px;
+        margin-right: 1px;
+    }
+
+    .depp {
+        width: 150px;
+    }
+
+    .multidept {
+        padding: 2px;
+    }
+
+    .twoIcons {
+        height: 15px;
+        gap: 5px;
+    }
 }

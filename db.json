@@ -30,6 +30,8 @@
       "name": "Jimmy Jimmy",
       "profileImage": "/assets/man1.png",
       "department": [
+        "Sales",
+        "Finance",
         "Engineer"
       ],
       "gender": "Male",
@@ -109,10 +111,11 @@
       "name": "Girish",
       "profileImage": "/assets/meee.png",
       "department": [
-        "HR"
+        "HR",
+        "Finance"
       ],
       "gender": "Male",
-      "salary": "40000",
+      "salary": "20000",
       "date": "2023-01-25T18:30:00.000Z",
       "inputnotes": "ssss",
       "id": 25
@@ -157,6 +160,18 @@
       "date": "2023-01-27T18:30:00.000Z",
       "inputnotes": "Multi Talented Person",
       "id": 28
+    },
+    {
+      "name": "SRK",
+      "profileImage": "/assets/man1.png",
+      "department": [
+        "HR"
+      ],
+      "gender": "Male",
+      "salary": "40000",
+      "date": "2023-01-17T18:30:00.000Z",
+      "inputnotes": "Bollywood Star",
+      "id": 29
     }
   ],
   "getAll": [

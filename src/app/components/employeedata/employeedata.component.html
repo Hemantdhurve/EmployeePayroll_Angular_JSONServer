@@ -34,7 +34,7 @@
             <tr>
                 <th class="nametxt">Name</th>
                 <th>Gender</th>
-                <th>Department</th>
+                <th class="depp">Department</th>
                 <th>Salary</th>
                 <th>Start date</th>
                 <th>Actions</th>
@@ -42,7 +42,7 @@
             <tr *ngFor="let emp of empArray | searchpipe:searchname">
                 <td class="namePofile"><img [src]="emp.profileImage" class="profileimg"> {{emp.name}}</td>
                 <td>{{emp.gender}}</td>
-                <td >
+                <td class="clubdept">
                     <span class="multidept" *ngFor="let dept of emp.department"> {{dept}} </span>
                 </td>
                 <td class="salarylogo">
