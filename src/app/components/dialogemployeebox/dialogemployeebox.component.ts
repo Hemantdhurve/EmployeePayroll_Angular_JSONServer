@@ -12,14 +12,14 @@ export class DialogemployeeboxComponent implements OnInit{
   dialogForm!:FormGroup;
   submitted=false;
   deptArray:any=[];
-  id:any;
-  name:any;
-  profileImage:any;
+  id:Number=0;
+  name:string='';
+  profileImage:string='';
   department:any=[];
-  gender:any;
-  salary:any;
+  gender:string='';
+  salary:Number=0;
   date:any;
-  inputnotes:any;
+  inputnotes:string='';
   
   constructor(private formBuilder:FormBuilder,private empservice:EmployeeserviceService,private dialogRef:MatDialogRef<DialogemployeeboxComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {

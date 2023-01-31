@@ -12,10 +12,10 @@ export class EmployeeformComponent implements OnInit{
 
   employeeform!:FormGroup;
   submitted=false;
-  hr:any;
+  hr:string='';
   deptArray:any=[]; 
   id:Number=0;
-  deptname:any;
+  deptname:string='';
   checked:boolean=true;
 
   
@@ -57,6 +57,7 @@ export class EmployeeformComponent implements OnInit{
       //   })
     }
   }
+  
   //get department
 
   getDeptList(){

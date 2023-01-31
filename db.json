@@ -4,27 +4,14 @@
       "name": "Hemant Dhurve",
       "profileImage": "/assets/meee.png",
       "department": [
-        "Engineer"
+        "Finance",
+        "Sales"
       ],
       "gender": "Male",
       "salary": "30000",
       "date": "2023-01-12T18:30:00.000Z",
       "inputnotes": "my name is hemant",
       "id": 17
-    },
-    {
-      "name": "kiran kaushik",
-      "profileImage": "/assets/women1.png",
-      "department": [
-        "HR",
-        "Finance",
-        "Engineer"
-      ],
-      "gender": "FeMale",
-      "salary": "30000",
-      "date": "2023-01-17T18:30:00.000Z",
-      "inputnotes": "22222",
-      "id": 18
     },
     {
       "name": "Jimmy Jimmy",
@@ -134,26 +121,12 @@
       "id": 26
     },
     {
-      "name": "asS",
-      "profileImage": "/assets/women2.png",
-      "department": [
-        "HR",
-        "Sales"
-      ],
-      "gender": "FeMale",
-      "salary": "60000",
-      "date": "2023-01-16T18:30:00.000Z",
-      "inputnotes": "ASsSs",
-      "id": 27
-    },
-    {
       "name": "Hems",
       "profileImage": "/assets/meee.png",
       "department": [
+        "Engineer",
         "HR",
-        "Sales",
-        "Finance",
-        "Engineer"
+        "Finance"
       ],
       "gender": "Male",
       "salary": "70000",
@@ -165,13 +138,39 @@
       "name": "SRK",
       "profileImage": "/assets/man1.png",
       "department": [
-        "HR"
+        "Sales",
+        "Finance"
       ],
       "gender": "Male",
-      "salary": "40000",
-      "date": "2023-01-17T18:30:00.000Z",
-      "inputnotes": "Bollywood Star",
+      "salary": "50000",
+      "date": "2023-01-14T18:30:00.000Z",
+      "inputnotes": "Bollywood Star Really",
       "id": 29
+    },
+    {
+      "name": "Sonu Mishra",
+      "profileImage": "/assets/meee.png",
+      "department": [
+        "HR",
+        "Engineer"
+      ],
+      "gender": "Male",
+      "salary": "60000",
+      "date": "2023-01-10T18:30:00.000Z",
+      "inputnotes": "New Employee",
+      "id": 30
+    },
+    {
+      "name": "Nikki",
+      "profileImage": "/assets/women2.png",
+      "department": [
+        "Sales"
+      ],
+      "gender": "FeMale",
+      "salary": "50000",
+      "date": "2023-01-20T18:30:00.000Z",
+      "inputnotes": "Best Sales Achieve",
+      "id": 31
     }
   ],
   "getAll": [

@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DataserviceService } from 'src/app/services/dataservice/dataservice.service';
 import { EmployeeserviceService } from 'src/app/services/employeeservice.service';
+import { IdeleteEmployee } from 'src/app/services/typeservicefile';
 import { DialogemployeeboxComponent } from '../dialogemployeebox/dialogemployeebox.component';
 
 @Component({
@@ -13,12 +14,12 @@ import { DialogemployeeboxComponent } from '../dialogemployeebox/dialogemployeeb
 export class EmployeedataComponent implements OnInit {
 
   searchbarhide=false
-  empArray:any=[];
+  empArray:object=[];
   subscription:any;
   message:any;
-  searchname:any;
-  deptArray:any=[];
-  department:any=[];
+  searchname:string='';
+  deptArray:object=[];
+  department:object=[];
 
   constructor(private router:Router,private empservice:EmployeeserviceService,private dataservice:DataserviceService,public dialog: MatDialog){}
 
@@ -52,9 +53,9 @@ export class EmployeedataComponent implements OnInit {
     })
   }
    
-  deleteEmployee(id:any){
-    return this.empservice.deleteEmployee(id).subscribe((response:any)=>{
-      console.log('Entry Deleted Successfully')
+  deleteEmployee(idData:IdeleteEmployee){
+    return this.empservice.deleteEmployee(idData).subscribe((response:any)=>{
+      console.log('Entry Deleted Successfully',response)
     })
   }
 
@@ -68,7 +69,7 @@ export class EmployeedataComponent implements OnInit {
 
   //dialog open
 
-  openDialog(empObj:any) {
+  openDialog(empObj:object) {
     const dialogRef = this.dialog.open(DialogemployeeboxComponent,{
       data:empObj
     })
