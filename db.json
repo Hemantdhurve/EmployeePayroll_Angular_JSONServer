@@ -31,7 +31,8 @@
       "name": "Ravi Teja",
       "profileImage": "/assets/man1.png",
       "department": [
-        "Other"
+        "Finance",
+        "Engineer"
       ],
       "gender": "Male",
       "salary": "20000",
@@ -43,9 +44,7 @@
       "name": "Nishi Duke",
       "profileImage": "/assets/women2.png",
       "department": [
-        "HR",
-        "Finance",
-        "Other"
+        "Engineer"
       ],
       "gender": "FeMale",
       "salary": "30000",
@@ -66,19 +65,6 @@
       "date": "2023-01-12T18:30:00.000Z",
       "inputnotes": "My Oylompia",
       "id": 22
-    },
-    {
-      "name": "Tom Holland",
-      "profileImage": "/assets/meee.png",
-      "department": [
-        "Finance",
-        "Engineer"
-      ],
-      "gender": "Male",
-      "salary": "60000",
-      "date": "2021-07-06T18:30:00.000Z",
-      "inputnotes": "Hollywood",
-      "id": 23
     },
     {
       "name": "Mike",
@@ -108,33 +94,6 @@
       "id": 25
     },
     {
-      "name": "sss",
-      "profileImage": "/assets/women1.png",
-      "department": [
-        "Finance",
-        "Other"
-      ],
-      "gender": "FeMale",
-      "salary": "60000",
-      "date": "2023-01-13T18:30:00.000Z",
-      "inputnotes": "asas",
-      "id": 26
-    },
-    {
-      "name": "Hems",
-      "profileImage": "/assets/meee.png",
-      "department": [
-        "Engineer",
-        "HR",
-        "Finance"
-      ],
-      "gender": "Male",
-      "salary": "70000",
-      "date": "2023-01-27T18:30:00.000Z",
-      "inputnotes": "Multi Talented Person",
-      "id": 28
-    },
-    {
       "name": "SRK",
       "profileImage": "/assets/man1.png",
       "department": [
@@ -161,16 +120,30 @@
       "id": 30
     },
     {
-      "name": "Nikki",
-      "profileImage": "/assets/women2.png",
+      "name": "Sam Ken",
+      "profileImage": "/assets/man1.png",
       "department": [
-        "Sales"
+        "Other",
+        "Engineer"
       ],
-      "gender": "FeMale",
-      "salary": "50000",
-      "date": "2023-01-20T18:30:00.000Z",
-      "inputnotes": "Best Sales Achieve",
-      "id": 31
+      "gender": "Male",
+      "salary": "20000",
+      "date": "2023-01-31T18:30:00.000Z",
+      "inputnotes": "What they want?",
+      "id": 32
+    },
+    {
+      "name": "Aamir Khan",
+      "profileImage": "/assets/man1.png",
+      "department": [
+        "Sales",
+        "Other"
+      ],
+      "gender": "Male",
+      "salary": "40000",
+      "date": "2023-01-31T18:30:00.000Z",
+      "inputnotes": "Bollywood star",
+      "id": 34
     }
   ],
   "getAll": [

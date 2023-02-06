@@ -42,7 +42,7 @@ export class EmployeedataComponent implements OnInit {
     }
   }
   getAllEmployee(){
-    return this.empservice.getEmployee().subscribe((response:any)=>{
+    return this.empservice.getEmployee().subscribe((response:Object)=>{
       this.empArray=response
       console.log("Retrived all Employees",this.empArray)
       // this.deptArray = this.empArray.filter((response: any) => {
@@ -54,8 +54,9 @@ export class EmployeedataComponent implements OnInit {
   }
    
   deleteEmployee(idData:IdeleteEmployee){
-    return this.empservice.deleteEmployee(idData).subscribe((response:any)=>{
+    return this.empservice.deleteEmployee(idData).subscribe((response:Object)=>{
       console.log('Entry Deleted Successfully',response)
+      this.getAllEmployee();
     })
   }
 

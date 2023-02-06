@@ -23,7 +23,7 @@ export class DialogemployeeboxComponent implements OnInit{
   
   constructor(private formBuilder:FormBuilder,private empservice:EmployeeserviceService,private dialogRef:MatDialogRef<DialogemployeeboxComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) {
-      
+
       console.log('getting data', data)
 
       this.id=data?.id
@@ -68,7 +68,7 @@ export class DialogemployeeboxComponent implements OnInit{
         inputnotes: this.dialogForm.value.inputnotes,
         id:this.dialogForm.value.id
       }
-      this.empservice.updateEmployee(this.id,data).subscribe((response:any)=>{
+      this.empservice.updateEmployee(this.id,data).subscribe((response:object)=>{
         console.log("Details Updated Successfully",response)
       })
     }

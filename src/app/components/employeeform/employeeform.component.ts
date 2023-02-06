@@ -16,9 +16,7 @@ export class EmployeeformComponent implements OnInit{
   deptArray:any=[]; 
   id:Number=0;
   deptname:string='';
-  checked:boolean=true;
-
-  
+  checked:boolean=true; 
 
   constructor(private router:Router,private formBuilder:FormBuilder,private empservice:EmployeeserviceService){}
 
@@ -36,27 +34,6 @@ export class EmployeeformComponent implements OnInit{
     this.getDeptList();
   }
   get f() { return this.employeeform.controls; }
-
-  onSubmit() {
-    this.submitted = true;
-
-    if (this.employeeform.valid) {
-      // console.log("submit works")
-      // let payload = {
-      //   name: this.employeeform.value.name,
-      //   profileImage: this.employeeform.value.profileImage,
-      //   gender: this.employeeform.value.gender,
-      //   salary: this.employeeform.value.salary,
-      //   day: this.employeeform.value.day,
-      //   month: this.employeeform.value.month,
-      //   year: this.employeeform.value.year,
-      //   inputnotes: this.employeeform.value.inputnotes,
-      // }
-      // this.empservice.addEmployee(payload).subscribe((response:any)=>{
-      //     console.log("Employee Data added Successfully",response)
-      //   })
-    }
-  }
   
   //get department
 
@@ -83,13 +60,6 @@ export class EmployeeformComponent implements OnInit{
       const index = department.controls.findIndex(x => x.value === id);
       department.removeAt(index);
     }
-  //  const empArray=this.employeeform.get(this.deptArray) as FormArray
-  //  if(this.deptArray.indexOf()){
-  //   push(new FormControl(isChecked))
-  //  }
-  //  else{
-
-  //  }
   }
 
   datasubmit(){
@@ -103,7 +73,8 @@ export class EmployeeformComponent implements OnInit{
       date: this.employeeform.value.date,
       inputnotes: this.employeeform.value.inputnotes,
     }
-    this.empservice.addEmployee(payload).subscribe((response:any)=>{
+    console.log("Finally getting data",payload)
+    this.empservice.addEmployee(payload).subscribe((response:Object)=>{
         console.log("Employee Data added Successfully",response)
       })
   }

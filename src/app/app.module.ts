@@ -20,6 +20,7 @@ import {FormsModule} from '@angular/forms';
 import { SearchpipePipe } from './components/searchpipe/searchpipe.pipe';
 import { DialogemployeeboxComponent } from './components/dialogemployeebox/dialogemployeebox.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { ExtraComponent } from './components/extra/extra.component';
 
 
 
@@ -29,7 +30,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     EmployeeformComponent,
     EmployeedataComponent,
     SearchpipePipe,
-    DialogemployeeboxComponent
+    DialogemployeeboxComponent,
+    ExtraComponent
   ],
   imports: [
     BrowserModule,

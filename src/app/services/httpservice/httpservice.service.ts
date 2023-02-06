@@ -12,34 +12,6 @@ export class HttpserviceService {
 
   constructor(private httpclient: HttpClient) { }
 
-  // PostService(data:any){
-  //   return this.httpclient.post<any>(this.baseurl+'posts',data)
-  //   .pipe(map((response:any)=>{
-  //     return response;
-  //   }))
-  // }
-
-  // GetService() {
-  //   return this.httpclient.get<any>(this.baseurl + 'posts')
-  //     .pipe(map((response: any) => {
-  //       return response;
-  //     }))
-  // }
-  
-  // DeleteService(id: any) {
-  //   return this.httpclient.delete<any>(this.baseurl + 'posts/' + id)
-  //     .pipe(map((response: any) => {
-  //       return response;
-  //     }))
-  // }
-
-  // UpdateService(id: any, data: any) {
-  //   return this.httpclient.put<any>(this.baseurl + 'posts/' + id, data)
-  //     .pipe(map((response: any) => {
-  //       return response;
-  //     }))
-  // }
-
   //Using Type or Interface to get 
 
   PostService(url: string, data: IaddEmployee, token: boolean = false, headersOptions: any) {
